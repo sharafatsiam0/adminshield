@@ -1,113 +1,72 @@
 # Trustline WP
 
-**Zero-Trust security layer for WordPress admin powered by Cloudflare Access**
-
-Trustline WP is a lightweight security plugin that protects your **/wp-admin** and login area by allowing access only through Cloudflare Trust / Zero-Trust verification.
-It helps block direct login attempts, bots, and unauthorized users before WordPress loads.
+A simple WordPress plugin that adds **Trustline protection** to the login page to prevent bots and unauthorized access.
 
 ---
 
-## ✨ Features
+## ✨ What This Plugin Does
 
-* Protects **wp-admin** behind Cloudflare Access
-* Blocks direct public access to admin panel
-* Allows only verified users/devices
-* Email-based access restriction
-* IP allowlist support
-* Basic audit logging
-* Lightweight and developer-friendly
+Trustline WP adds an extra security layer to your WordPress login.
+
+After installing the plugin, you can enter your **Site Key** and **Secret Key** from Cloudflare.
+Once saved, Trustline protection appears on the login page to block bots and suspicious login attempts.
 
 ---
 
-## 🚀 How It Works
-
-Trustline WP checks Cloudflare Access headers on every admin request.
-
-If the request is not authenticated through Cloudflare, the plugin blocks access immediately.
-
-Example headers:
-
-* `CF-Access-Authenticated-User-Email`
-* Cloudflare IP verification
-* Optional allowlist rules
-
----
-
-## 📦 Installation
+## 🚀 Installation
 
 1. Download the plugin
-2. Upload to:
+2. Upload it to:
 
 ```
 /wp-content/plugins/trustline-wp
 ```
 
-3. Activate from **WordPress → Plugins**
-4. Configure settings
+3. Activate the plugin from **WordPress → Plugins**
 
 ---
 
-## ⚙️ Basic Usage
+## ⚙️ Setup
 
 After activation:
 
-1. Create a Cloudflare Access application for your WordPress admin
-2. Enable authentication (Google, GitHub, email, etc.)
-3. Open Trustline WP settings
-4. Add allowed emails or IPs
-5. Enable protection
+1. Open **Trustline WP** from the admin dashboard
+2. Add your:
 
-Now only authenticated users can open **wp-admin**.
+   * Site Key
+   * Secret Key
+3. Select the protection option
+4. Click **Save**
 
----
+That’s it ✅
 
-## 🔐 Example Protection Logic
-
-```php
-add_action('admin_init', function () {
-    if (!isset($_SERVER['HTTP_CF_ACCESS_AUTHENTICATED_USER_EMAIL'])) {
-        wp_die('Access blocked — Trustline required');
-    }
-});
-```
-
-
-
-
-
+Trustline will now appear on the login page.
 
 ---
 
-## 🎯 Use Cases
+## 🔐 Result
 
-* Agencies protecting client admin panels
-* Developers securing staging sites
-* SaaS dashboards built on WordPress
-* High-traffic sites reducing brute-force attacks
-
----
-
-## 🤝 Contributing
-
-Pull requests and suggestions are welcome.
-
-If you find a bug, open an issue with steps to reproduce.
+* Prevents bot logins
+* Adds verification before login
+* Improves WordPress security
+* Simple setup with no complex configuration
 
 ---
 
-## 📄 License
+## 📦 Requirements
 
-GPL v2 or later
+* WordPress 5.0+
+* Cloudflare account
+* Site Key & Secret Key
 
 ---
 
 ## 👤 Author
 
 Siam
-WordPress Developer (Learning & Building)
 
 ---
 
-## ⭐ Vision
+## 📄 License
 
-Trustline WP aims to bring **Zero-Trust security** to WordPress in a simple, developer-friendly way — turning admin panels into private infrastructure instead of public login pages.
+GPL v2 or later
