@@ -1,4 +1,4 @@
-# Trustline WP
+# Adminshield
 
 Adminshield is simple WordPress plugin that adds **Trustline protection** to the login page to prevent bots and unauthorized access.
 
@@ -30,7 +30,7 @@ Once saved, Trustline protection appears on the login page to block bots and sus
 
 After activation:
 
-1. Open **Trustline WP** from the admin dashboard
+1. Open **adminshield** from the admin dashboard
 2. Add your:
 
    * Site Key
@@ -70,5 +70,6 @@ Siam
 ## 📄 License
 
 GPL v2 or later
+
 
 
