@@ -1,12 +1,12 @@
 # Trustline WP
 
-A simple WordPress plugin that adds **Trustline protection** to the login page to prevent bots and unauthorized access.
+Adminshield is simple WordPress plugin that adds **Trustline protection** to the login page to prevent bots and unauthorized access.
 
 ---
 
 ## ✨ What This Plugin Does
 
-Trustline WP adds an extra security layer to your WordPress login.
+Adminshield adds an extra security layer to your WordPress login.
 
 After installing the plugin, you can enter your **Site Key** and **Secret Key** from Cloudflare.
 Once saved, Trustline protection appears on the login page to block bots and suspicious login attempts.
@@ -70,4 +70,5 @@ Siam
 ## 📄 License
 
 GPL v2 or later
+
 
