@@ -19,7 +19,7 @@ Once saved, Trustline protection appears on the login page to block bots and sus
 2. Upload it to:
 
 ```
-/wp-content/plugins/trustline-wp
+/wp-content/plugins
 ```
 
 3. Activate the plugin from **WordPress → Plugins**
@@ -70,3 +70,4 @@ Siam
 ## 📄 License
 
 GPL v2 or later
+
